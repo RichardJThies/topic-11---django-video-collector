@@ -1,0 +1,30 @@
+{% extends 'video_collection/base.html' %}
+
+{% block content %}
+
+<h2>Video List</h2><!--Page where the successfully added videos are displayed-->
+
+{% for video in videos %}<!--variable from views.py dictionary-->
+
+    <div>
+        <h3>{{video.name}}</h3>
+        <p>{{video.notes}}</p>
+        <a href="{{video.url}}">{{video.url}}</p><!--links are embedded into the url text-->
+    </div>
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
