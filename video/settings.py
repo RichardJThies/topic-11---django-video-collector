@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'video_collection'
+    'video_collection'#make sure dir is accessed by project?
 ]
 
 MIDDLEWARE = [
