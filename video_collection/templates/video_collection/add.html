@@ -5,7 +5,9 @@
 <h2>Add new video</h2>
 
 {% for message in messages %}
-    <li>{{message}}</li><!--Django messages-->
+    <li>{{message}}</li><!--Django messages "use cookies to display one time only, the messages are cleared after each requests."
+
+    -->
 {% endfor %}
 
 <form method="POST" action="{% url 'add_video' %}">
