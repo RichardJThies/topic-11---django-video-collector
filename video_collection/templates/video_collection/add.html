@@ -1,0 +1,37 @@
+{% extends 'video_collection/base.html' %}
+
+{% block content %}
+
+<h2>Add new video</h2>
+
+{% for message in messages %}
+    <li>{{message}}</li><!--Django messages-->
+{% endfor %}
+
+<form method="POST" action="{% url 'add_video' %}">
+
+    {% csrf_token %}<!--Needed for the page to work. Stops bad requests?-->
+    {{new_video_form}}<!--Sent from views.py-->
+    <button type="submit">Add Video</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
