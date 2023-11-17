@@ -14,4 +14,12 @@
     {% block content %}
     {% endblock %}
 
+    <hr><!--horizontal rule-->
+
+    <div class="navigation"><!--links at the foot to allow navigation-->
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'video_list' %}">Video List</a>
+        <a href="{% url 'add_video' %}">Add a Video</a>
+    </div>
+
 </html>

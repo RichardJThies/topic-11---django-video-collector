@@ -30,16 +30,3 @@ class Video(models.Model):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
